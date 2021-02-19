@@ -45,7 +45,11 @@ const minify = async (options) => {
     };
   }
 
-  const result = await cssnano.process(input, postcssOptions, minimizerOptions);
+  const result = await cssnano().process(
+    input,
+    postcssOptions,
+    minimizerOptions
+  );
 
   return {
     code: result.css,

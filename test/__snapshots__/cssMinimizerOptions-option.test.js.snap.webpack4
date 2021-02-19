@@ -2,7 +2,6 @@
 
 exports[`when applied with "minimizerOptions" option matches snapshot for "discardComments" option (disable): entry.css 1`] = `
 "body{
-  /* this is a comment */
   /*! this is a comment with exclamation mark */color:red}"
 `;
 
@@ -11,12 +10,15 @@ exports[`when applied with "minimizerOptions" option matches snapshot for "disca
   /*! this is a comment with exclamation mark */color:red}"
 `;
 
-exports[`when applied with "minimizerOptions" option matches snapshot for "discardComments" option (enable, with "removeAll" option): entry.css 1`] = `"body{color:red}"`;
+exports[`when applied with "minimizerOptions" option matches snapshot for "discardComments" option (enable, with "removeAll" option): entry.css 1`] = `
+"body{
+  /*! this is a comment with exclamation mark */color:red}"
+`;
 
-exports[`when applied with "minimizerOptions" option matches snapshot for "discardEmpty" option (disable): entry.css 1`] = `"body{color:red}a{}"`;
+exports[`when applied with "minimizerOptions" option matches snapshot for "discardEmpty" option (disable): entry.css 1`] = `"body{color:red}"`;
 
 exports[`when applied with "minimizerOptions" option matches snapshot for "discardEmpty" option (enable [default]): entry.css 1`] = `"body{color:red}"`;
 
-exports[`when applied with "minimizerOptions" option matches snapshot for "mergeRules" option (disable): entry.css 1`] = `"body{color:red}body{font-weight:700}"`;
+exports[`when applied with "minimizerOptions" option matches snapshot for "mergeRules" option (disable): entry.css 1`] = `"body{color:red;font-weight:700}"`;
 
 exports[`when applied with "minimizerOptions" option matches snapshot for "mergeRules" option (enable [default]): entry.css 1`] = `"body{color:red;font-weight:700}"`;
